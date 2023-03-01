@@ -1,0 +1,9 @@
+http://www.unit-conversion.info/texttools/random-string-generator/
+https://www.focikatalogus.hu/focicsapatok
+
+for (int i = 0; i < meccsek.length; i++) {
+    out.println();
+    for (int j = 0; j < meccsek[i].length; j++) {
+        out.print(meccsek[i][j]);
+    }
+}
