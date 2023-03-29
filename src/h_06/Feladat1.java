@@ -9,7 +9,7 @@ import static java.lang.System.out;
  */
 public class Feladat1 {
 
-    private static String[][] meccsek = {
+    private static final String[][] meccsek = {
         {"u36", "FC Barcelona-Real Madrid", "D"},
         {"b51", "Ferencváros-Bayern München", "H"},
         {"a48", "Magyarország-Manchester United", "V"},
@@ -22,16 +22,16 @@ public class Feladat1 {
         {"i98", "Atlético Madrid-Németország", "V"}
     };
 
-    private static String[] userTipp = {"o78", "D"};
+    private static final String[] userTipp = {"o78", "D"};
 
-    private static String[][] userTipp2 = {
+    private static final String[][] userTipp2 = {
         {"u36", "D"},
         {"b51", "H"},
         {"a49", "V"},
         {"p99", "H"}
     };
 
-    private static Double[][] odds = {
+    private static final Double[][] odds = {
         {2.2, 3.1, 1.82},
         {2.2, 3.1, 1.82},
         {2.2, 3.1, 1.82},
@@ -52,12 +52,11 @@ public class Feladat1 {
         boolean ervenyesTipp = false;
         String eredmeny = "";
 
-        for (int i = 0; i < meccsek.length; i++) {
-
+        for (String[] meccs : meccsek) {
             // Ha van ilyen sorszámú meccs
-            if (meccsek[i][0].equalsIgnoreCase(userTipp[0])) {
+            if (meccs[0].equalsIgnoreCase(userTipp[0])) {
                 ervenyesTipp = true;
-                eredmeny = meccsek[i][2];
+                eredmeny = meccs[2];
                 break;
             }
         }
