@@ -1,4 +1,4 @@
-package h_06;
+package tippmix;
 
 import static java.lang.System.out;
 
