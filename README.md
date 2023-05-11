@@ -1,2 +1,2 @@
-# H_06
+# Tippmix
 Netbeansproject in Java
